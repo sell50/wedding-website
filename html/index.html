@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Wedding</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../fonts/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../fonts/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../fonts/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- Header with Banner -->
+    <header id="header">
+        <div class="banner-image">
+            <div class="container text-center title-container">
+                <h1 class="main-title">Jason <br> & <br> Katerina</h1>
+                <h3 class="sub-title">June 15, 2028</h3>
+                <a href="#rsvp" class="btn btn-custom btn-lg mt-4 mb-4">RSVP Here</a>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#event-details">Event Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rsvp">RSVP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#love-story">Our Love Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#picture-gallery">Picture Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-info">Contact Information</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Event Details -->
+    <section id="event-details" class="py-5 section-bg">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="event-image">
+                        <img src="../images/test_flowers.png" alt="Test Flowers" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="event-info">
+                        <h2 class="h1 mb-4 text-center text-lg-center">Event Details</h2>
+                        <p class="fs-5 mb-3">
+                            Join us for our wedding celebration on
+                        </p>
+                        <p><strong>Saturday, June 15, 2028</strong>, at <strong>2:00 PM</strong>.</p>
+                        <p>The <strong>ceremony</strong> will take place at the beautiful <strong>Wedding Chapel</strong>, followed by a <strong>reception</strong>, at <strong>the Reception Hall, at 5:30 PM,</strong> filled with food, drinks, and dancing.</p>
+                        <p class="mb-2"><strong>Address:</strong> 1234 North Road St. City, ON A1B 2C3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- RSVP Form -->
+    <section id="rsvp" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm section-bg">
+                        <div class="card-body p-5">
+                            <h2 class="h1 mb-4 text-center">RSVP</h2>
+                            <p class="text-center mb-4">Please let us know if you will be able to attend by filling out the form below:</p>
+                            <form class="rsvp-form" action="/form/submit.php" method="POST">
+                                <!-- Full Name(s) -->
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name(s):</label>
+                                    <input type="text" class="form-control" name="name" autocomplete="name" placeholder="Please give your full name so we know who you are!" required>
+                                </div>
+                                <!-- How many will be attending? -->
+                                <div class="mb-4">
+                                    <label for="guests" class="form-label">Number of Guests Attending:</label>
+                                    <input type="number" class="form-control" name="guests" min="1" max="10" placeholder="Please enter the number of guests attending.">
+                                </div>
+                                <!-- Dietary Restrictions -->
+                                <div class="mb-4">
+                                    <label for="diet" class="form-label">Dietary Restrictions:</label>
+                                    <textarea class="form-control dietary-restrictions-textarea" name="diet" rows="3" placeholder="Please specify any dietary restrictions."></textarea>
+                                </div>
+                                <!-- Note to let them know to email us if needed: -->
+                                <div class="mb-4">
+                                    <p class="form-text">If you have any additional questions or need to contact us, please email us at <a href="mailto:wedding@email.com">wedding@email.com</a>.</p>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-custom btn-lg px-5">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Love Story -->
+    <section id="love-story" class="py-5 section-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="h1 mb-5 text-center">Our Love Story</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <p class="lead">
+                                Jason and Katerina's love story is coming soon! We can't wait to share our journey with you all as we prepare for our big day. Stay tuned for the full story of how we met, fell in love, and decided to spend the rest of our lives together. We promise it will be worth the wait!
+                            </p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h4>What is Lorem Ipsum?</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h4>Why do we use it?</h4>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+                            </p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h4>Where does it come from?</h4>
+                            <p>
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p>
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Picture Gallery -->
+    <section id="picture-gallery" class="py-5">
+        <div class="container">
+            <h2 class="h1 mb-5 text-center">Picture Gallery</h2>
+            <div class="row g-4">
+                <!-- Gallery Images -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="../images/test1.jpg" alt="Gallery Image 1" class="card-img-top" style="height: 250px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="../images/test2.jpg" alt="Gallery Image 2" class="card-img-top" style="height: 250px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="../images/test3.jpg" alt="Gallery Image 3" class="card-img-top" style="height: 250px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="../images/test1.jpg" alt="Gallery Image 4" class="card-img-top" style="height: 250px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="../images/test2.jpg" alt="Gallery Image 5" class="card-img-top" style="height: 250px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="../images/test3.jpg" alt="Gallery Image 6" class="card-img-top" style="height: 250px; object-fit: cover;">
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="../images/test1.jpg" alt="Gallery Image 1" class="card-img-top" style="height: 250px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="../images/test2.jpg" alt="Gallery Image 2" class="card-img-top" style="height: 250px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="../images/test3.jpg" alt="Gallery Image 3" class="card-img-top" style="height: 250px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="../images/test1.jpg" alt="Gallery Image 4" class="card-img-top" style="height: 250px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="../images/test2.jpg" alt="Gallery Image 5" class="card-img-top" style="height: 250px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="../images/test3.jpg" alt="Gallery Image 6" class="card-img-top" style="height: 250px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Information -->
+    <section id="contact-info" class="py-5 section-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="h1 mb-4">Contact Information</h2>
+                    <p class="lead mb-4">For any questions, please reach out to us at:</p>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100 border-0 bg-light">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">Email</h5>
+                                    <p class="card-text">
+                                        <a href="mailto:wedding@email.com" class="contact-link">wedding@email.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100 border-0 bg-light">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">Phone</h5>
+                                    <p class="card-text">
+                                        <a href="tel:+1234567890" class="contact-link">(123) 456-7890</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-custom py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">2028 The Wedding of Jason & Katerina</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/bootstrap.bundle.min.js"></script>
+</body>
+</html>

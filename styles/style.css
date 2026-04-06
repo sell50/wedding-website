@@ -1,0 +1,558 @@
+@font-face {
+    font-family: 'Tangerine';
+    src: url('../fonts/Tangerine-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CormorantGaramond';
+    src: url('../fonts/CormorantGaramond-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ff69b4;
+}
+
+a:hover {
+    color: #333;
+}
+
+::selection {
+    background: #ff69b4;
+    color: #EEE;
+    text-shadow: none;
+}
+
+/* Header */
+
+.header>div {
+    height: 100vh;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid #800020;
+    background-image: url('../images/testing.jpg');
+    background-color: antiquewhite;
+}
+
+.title-container {
+    background-color: #eeeeeed9;
+    border-radius: 10px;
+}
+
+/* Navigation */
+.site-nav {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.site-nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 36px;
+    margin: 0px;
+}
+
+.site-nav ul li {
+    margin: 0 15px;
+}
+
+.site-nav ul li a {
+    font-size: 1.5em;
+    color: #800020;
+    font-weight: bold;
+}
+
+/* Event Details */
+
+.event-details {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    max-height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid #800020;
+}
+
+.venue-image {
+    width: 50vw;
+    height: 100vh;
+    border-right: 5px solid #800020;
+}
+
+.event-info {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 auto;
+    color: #444;
+}
+
+/* RSVP Section */
+
+#rsvp {
+    background-color: #212529;
+}
+
+.rsvp-section {
+    background-color: #fff;
+    height: 100vh;
+    border: 5px solid #800020;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #800020;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #ff69b4;
+}
+
+.rsvp-form input, .rsvp-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.rsvp-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.rsvp-form textarea {
+    width: 100%;
+    height: 100px;
+    max-height: 150px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+/* Picture Gallery */
+
+#picture-gallery {
+    background-color: #f4f4f4;
+}
+
+.picture-gallery {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid #800020;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #800020;
+    border-radius: 5px;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #800020;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+.banner-image {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title {
+    font-family: 'Tangerine', cursive;
+    font-size: 3rem;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.sub-title {
+    font-family: serif;
+    font-size: 2.5rem;
+    color: #555;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.highlight {
+    color: #800020;
+}
+.custom-navbar {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-nav .nav-link {
+    color: #800020 !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.navbar-nav .nav-link:hover {
+    color: #ff69b4 !important;
+}
+.section-bg {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.btn-custom {
+    background-color: #800020;
+    border-color: #800020;
+    color: white;
+}
+.btn-custom:hover {
+    background-color: #ff69b4;
+    border-color: #ff69b4;
+    color: white;
+}
+.btn-outline-pink {
+    border: 2px solid #ff69b4;
+    color: #ff69b4;
+    background-color: transparent;
+}
+.btn-outline-pink:hover {
+    background-color: #ff69b4;
+    border-color: #ff69b4;
+    color: white;
+}
+.footer-custom {
+    background-color: #800020;
+    color: #fff;
+}
+.contact-link {
+    color: #800020;
+    text-decoration: none;
+}
+.contact-link:hover {
+    color: #ff69b4;
+}
+
+/* Confirmation Header */
+
+#confirm-header {
+    height: 26vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/test_flowers.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#confirm-header h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 4rem;
+}
+
+/* Summary Header */
+
+#summary-header {
+    height: 26vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/test_flowers.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#summary-header h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 4rem;
+}
+
+/* Error Pages */
+.something-went-wrong {
+    color: #8B4513;
+}
+
+/* Responsive Design */
+
+/** Large Desktop Styles */
+@media (min-width: 1441px) {
+    .banner-image {
+        height: 100vh;
+        max-height: 1244px;
+    }
+
+    .main-title {
+        font-size: 10em;
+        line-height: 1.2;
+        margin: 0;
+        padding: 20px;
+    }
+}
+
+/** Desktop Styles */
+@media (min-width: 1201px) and (max-width: 1440px) {
+    .banner-image {
+        height: 85vh;
+        max-height: 900px;
+    }
+
+    .main-title {
+        font-size: 8em;
+        line-height: 1.2;
+        margin: 0;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+     .banner-image {
+        height: 50vh;
+    }
+
+    .main-title {
+        font-size: 6em;
+    }
+
+    .site-nav {
+        display: none;
+    }
+
+    .event-details,
+    .rsvp-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .venue-image {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 5px solid #800020;
+    }
+
+    .event-info {
+        width: 90%;
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .banner-image {
+        height: 70vh;
+        min-height: 500px;
+    }
+
+    .main-title {
+        font-size: 6em;
+        line-height: 1.2;
+        margin: 0;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .site-nav {
+        display: none;
+    }
+
+    .event-details,
+    .rsvp-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .venue-image {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 5px solid #800020;
+    }
+
+    .event-info {
+        width: 90%;
+        margin: 20px 0;
+    }
+}
+
+/** Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .banner-image {
+        height: 60vh;
+        min-height: 400px;
+        background-attachment: scroll;
+    }
+
+    .main-title {
+        font-size: 4.8em;
+        line-height: 1.1;
+        margin: 0;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .event-details,
+    .rsvp-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .venue-image {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 5px solid #800020;
+    }
+
+    .event-info {
+        width: 90%;
+        margin: 20px 0;
+    }
+}
+
+/** Mobile Landscape Styles */
+@media (min-width: 481px) and (max-width: 768px) {
+    .banner-image {
+        height: 50vh;
+        min-height: 300px;
+        background-attachment: scroll;
+    }
+
+    .main-title {
+        font-size: 4.8em;
+        line-height: 1.1;
+        margin: 0;
+        padding: 8px 12px;
+        text-align: center;
+    }
+
+    .event-details,
+    .rsvp-section {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .venue-image {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 5px solid #800020;
+    }
+
+    .event-info {
+        width: 95%;
+        margin: 15px 0;
+        font-size: 1.1em;
+    }
+}
+
+/** Mobile Portrait Styles */
+@media (max-width: 480px) {
+    .banner-image {
+        height: 40vh;
+        min-height: 250px;
+        background-attachment: scroll;
+    }
+
+    .main-title {
+        font-size: 5.8em;
+        line-height: 1.0;
+        margin: 0;
+        padding: 5px 10px;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .event-details,
+    .rsvp-section {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .venue-image {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 5px solid #800020;
+    }
+
+    .event-info {
+        width: 95%;
+        margin: 10px 0;
+        font-size: 1em;
+    }
+
+    .site-nav ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .site-nav ul li {
+        margin: 5px 0;
+    }
+
+    .site-nav ul li a {
+        font-size: 1.2em;
+    }
+}
+
+/** Small Mobile Styles */
+@media (max-width: 320px) {
+    .banner-image {
+        height: 35vh;
+        min-height: 200px;
+    }
+
+    .main-title {
+        font-size: 3.8em;
+        line-height: 0.9;
+        margin: 0;
+        padding: 3px 8px;
+    }
+
+    .event-info {
+        width: 98%;
+        font-size: 0.9em;
+    }
+}

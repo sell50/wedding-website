@@ -1,0 +1,24 @@
+# Sensitive admin endpoints and pages
+form/rsvp.php
+html/rsvp_summary.html
+scripts/index.js
+
+# Private configuration files
+/path/to/private/
+.env
+.env.local
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local development files
+*.log
+node_modules/
